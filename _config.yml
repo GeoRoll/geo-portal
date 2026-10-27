@@ -1,0 +1,11 @@
+title: GeoRoll
+description: "Structured, plain-language company profiles for people and AI search."
+url: https://georoll.github.io
+baseurl: "/geo-portal"
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - client-template.md
