@@ -1,0 +1,19 @@
+---
+layout: default
+title: GeoRoll
+---
+<section class="hero">
+<p class="eyebrow">Generative Engine Optimization</p>
+<h1>Clear company profiles for the age of AI search.</h1>
+<p>GeoRoll publishes structured, plain-language profiles of companies, so people and AI assistants like ChatGPT, Perplexity and Claude can understand what each one does and who it is for.</p>
+</section>
+
+<h2 id="companies">Companies</h2>
+{% assign clients = site.pages | where: "client", true | sort: "title" %}
+{% if clients.size > 0 %}
+<ul class="cards">
+{% for p in clients %}<li><a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong><span>{{ p.description }}</span></a></li>
+{% endfor %}</ul>
+{% else %}
+<p class="empty">Company profiles will appear here as they are published.</p>
+{% endif %}
