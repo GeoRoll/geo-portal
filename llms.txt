@@ -1,0 +1,10 @@
+---
+layout: null
+---
+# GeoRoll
+
+> GeoRoll publishes structured, plain-language company profiles for people and AI search tools.
+
+## Companies
+{% assign clients = site.pages | where: "client", true | sort: "title" %}{% for p in clients %}
+- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description }}{% endfor %}
