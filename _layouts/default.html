@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+{% if page.schema %}<script type="application/ld+json">
+{{ page.schema }}
+</script>{% endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1422;--navy2:#13223A;--ivory:#FAF6F0;--ink:#1B2433;--muted:#4A5868;--peach:#F2B48C;--peach-soft:#FFE9DA;--blue:#BFE0F7;--line:#E3DDD3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ivory);color:var(--ink);font:17px/1.65 Inter,system-ui,sans-serif}
+a{color:#9A4F22}a:hover{color:#6E3410}
+.top{background:var(--navy);padding:18px 16px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600;color:var(--ivory);text-decoration:none;letter-spacing:.02em}
+.brand:hover{color:var(--peach-soft)}
+.top nav a{color:var(--blue);text-decoration:none;font-size:15px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+main{padding:48px 0 72px}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;color:var(--navy);line-height:1.15}
+h1{font-size:46px;margin:0 0 18px}
+h2{font-size:32px;margin:44px 0 12px;padding-top:20px;border-top:1px solid var(--line)}
+h3{font-size:23px;margin:26px 0 6px}
+.hero{background:var(--navy);color:var(--ivory);border-radius:20px;padding:48px 32px;margin-bottom:40px}
+.hero h1{color:var(--ivory)}
+.hero p{color:#D5DEE9;max-width:620px;margin:0}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--peach);margin:0 0 10px}
+.cards{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.cards a{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;text-decoration:none;color:var(--ink)}
+.cards a:hover{border-color:var(--peach)}
+.cards strong{display:block;font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--navy)}
+.cards span{color:var(--muted);font-size:15px}
+.empty{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+@media (max-width:600px){h1{font-size:36px}.hero{padding:32px 20px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="{{ '/' | relative_url }}">GeoRoll</a>
+<nav><a href="{{ '/' | relative_url }}#companies">Companies</a></nav>
+</div></header>
+<main><div class="wrap">
+{{ content }}
+</div></main>
+<footer><div class="wrap">© {{ site.time | date: "%Y" }} GeoRoll · Company profiles written to be clear for people and AI search.</div></footer>
+</body>
+</html>
