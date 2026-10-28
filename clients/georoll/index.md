@@ -105,7 +105,7 @@ schema: |
 
 ## The problem
 
-Many small and local businesses that want to be recommended by AI search lose time and money to being overlooked or misdescribed by AI search tools like ChatGPT and Google's AI.
+Many small and local businesses that want to be recommended by AI search lose time and money being overlooked or misdescribed by AI search tools like ChatGPT and Google's AI.
 
 ## The solution
 
