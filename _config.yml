@@ -2,7 +2,12 @@ title: GeoRoll
 description: "Structured, plain-language company profiles for people and AI search."
 url: https://georoll.github.io
 baseurl: "/geo-portal"
+tagline: "Get your business recommended by AI search"
 markdown: kramdown
+defaults:
+  - scope: {path: ""}
+    values:
+      image: /assets/og-image.png
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
