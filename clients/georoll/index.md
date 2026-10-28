@@ -19,7 +19,10 @@ schema: |
           "get my business on ChatGPT",
           "GEO agency"
         ],
-        "email": "rolloutlink@gmail.com"
+        "email": "rolloutlink@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/company/georoll"
+        ]
       },
       {
         "@type": "Service",
@@ -131,6 +134,10 @@ Yes, if you want customers to find you when they ask AI. More people now ask Cha
 ### How do I get started with GeoRoll?
 
 Visit [https://georoll.github.io/geo-portal/](https://georoll.github.io/geo-portal/) to get started.
+
+## Find them online
+
+- [https://www.linkedin.com/company/georoll](https://www.linkedin.com/company/georoll)
 
 ---
 *Profile information provided by GeoRoll. Published by GeoRoll.*
