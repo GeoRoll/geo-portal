@@ -6,6 +6,7 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+checkout_url: "https://georoll.lemonsqueezy.com/checkout/buy/3d1cb329-b98d-4977-9238-4ab86fe7f325"
 exclude:
   - README.md
   - client-template.md
