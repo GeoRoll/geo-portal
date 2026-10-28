@@ -1,16 +1,39 @@
 ---
 layout: default
 title: GeoRoll
+description: "Get your business recommended by ChatGPT, Google's AI and other AI search tools. One short form, and GeoRoll handles the rest."
 ---
-<section class="hero">
-<p class="eyebrow">Generative Engine Optimization</p>
-<h1>Clear company profiles for the age of AI search.</h1>
-<p>GeoRoll publishes structured, plain-language profiles of companies so people and AI assistants like ChatGPT, Perplexity, and Claude can understand what each one does and who it is for.</p>
-{% if site.checkout_url %}<p style="margin-top:24px"><a class="btn" href="{{ site.checkout_url }}">Get your business found by AI search &rarr;</a></p>
-<p style="margin-top:10px;font-size:15px">One short form after checkout. We handle everything else.</p>{% endif %}
+<section class="hero landing">
+<img class="hero-logo" src="{{ '/assets/georoll-wordmark.png' | relative_url }}" alt="GeoRoll, Generative Engine Optimization" width="1200" height="344">
+<h1>Get your business recommended by AI search.</h1>
+<p>When customers ask ChatGPT, Google's AI or Perplexity for a business like yours, GeoRoll makes sure those tools understand you, trust you and can name you. You fill in one short form. We handle the rest.</p>
+{% if site.checkout_url %}<div class="btn-row"><a class="btn" href="{{ site.checkout_url }}">Get started &rarr;</a></div>
+<p class="fine" style="margin-top:12px">Try it risk-free for 24 hours. Cancel anytime.</p>{% endif %}
 </section>
 
-<h2 id="companies">Companies</h2>
+<h2 id="what-you-get">What you get</h2>
+<div class="grid">
+<div class="card"><h3>An AI-ready profile</h3><p>A clear, structured profile of your business, written so people and AI search tools understand what you do and who you serve.</p></div>
+<div class="card"><h3>Trusted listings</h3><p>We set up and polish your listings on the sites AI tools trust, such as Google, Bing and key directories, without duplicates.</p></div>
+<div class="card"><h3>Monthly AI checks</h3><p>Each month we ask AI tools the questions your customers ask, and show you how often you're mentioned in a private report.</p></div>
+<div class="card"><h3>Website upgrade</h3><p>Optional: we add the behind-the-scenes details AI tools read to your own website. Your design stays exactly the same.</p></div>
+</div>
+
+<h2 id="how-it-works">How it works</h2>
+<ol class="steps">
+<li><strong>Subscribe</strong><span>Secure checkout, handled by Lemon Squeezy.</span></li>
+<li><strong>Answer one short form</strong><span>About 5 minutes. Your welcome email arrives within minutes.</span></li>
+<li><strong>We do the rest</strong><span>Your profile goes live, your listings get set up, and you get monthly results. Nothing else for you to do.</span></li>
+</ol>
+<p class="note"><strong>No hype.</strong> No one controls what AI tools say, so no one can honestly guarantee rankings. What we do is make your business clear and trustworthy to these tools, and show you honest results every month.</p>
+
+{% if site.checkout_url %}<section class="cta-band">
+<h2>Ready to be found?</h2>
+<p>Try GeoRoll risk-free for 24 hours.</p>
+<div class="btn-row"><a class="btn" href="{{ site.checkout_url }}">Get started &rarr;</a></div>
+</section>{% endif %}
+
+<h2 id="companies">Companies on GeoRoll</h2>
 {% assign clients = site.pages | where: "client", true | sort: "title" %}
 {% if clients.size > 0 %}
 <ul class="cards">
