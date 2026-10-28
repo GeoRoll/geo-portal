@@ -39,15 +39,35 @@ h3{font-size:23px;margin:26px 0 6px}
 .btn{display:inline-block;background:var(--peach);color:var(--navy);font-weight:600;padding:13px 22px;border-radius:10px;text-decoration:none}
 .btn:hover{background:var(--peach-soft);color:var(--navy)}
 .top nav{display:flex;gap:20px;align-items:center}
+.top nav a{white-space:nowrap}
 .top nav a.cta{color:var(--navy);background:var(--peach);padding:7px 14px;border-radius:8px;font-weight:600}
 footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
-@media (max-width:600px){h1{font-size:36px}.hero{padding:32px 20px}}
+.hero-logo{display:block;width:100%;height:auto;max-width:520px;margin:4px auto 22px}
+.hero.landing{text-align:center;padding:40px 28px 48px}
+.hero.landing h1{font-size:44px;max-width:680px;margin:6px auto 16px}
+.hero.landing p{margin:0 auto}
+.btn-row{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:26px}
+.fine{font-size:14px;color:#AFC0D3}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card h3{margin:0 0 6px;font-size:22px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px 18px 70px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:22px;top:18px;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--ivory);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px}
+.steps strong{display:block;color:var(--navy)}
+.steps span{color:var(--muted);font-size:15px}
+.note{background:var(--peach-soft);border-radius:14px;padding:18px 22px;margin-top:18px;color:var(--ink)}
+.cta-band{background:var(--navy);color:var(--ivory);border-radius:20px;padding:36px 28px;text-align:center;margin-top:44px}
+.cta-band h2{color:var(--ivory);border:0;margin:0 0 8px;padding:0}
+.cta-band p{color:#D5DEE9;margin:0}
+@media (max-width:600px){h1{font-size:36px}.hero{padding:32px 20px}.hero.landing h1{font-size:32px}.grid{grid-template-columns:1fr}.top nav a:not(.cta){display:none}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="{{ '/' | relative_url }}">GeoRoll</a>
-<nav><a href="{{ '/' | relative_url }}#companies">Companies</a>{% if site.checkout_url %}<a class="cta" href="{{ site.checkout_url }}">Get listed</a>{% endif %}</nav>
+<nav><a href="{{ '/' | relative_url }}#how-it-works">How it works</a><a href="{{ '/' | relative_url }}#companies">Companies</a>{% if site.checkout_url %}<a class="cta" href="{{ site.checkout_url }}">Get started</a>{% endif %}</nav>
 </div></header>
 <main><div class="wrap">
 {{ content }}
