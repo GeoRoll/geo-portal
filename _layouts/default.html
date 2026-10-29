@@ -51,6 +51,13 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 .watch{text-align:center;margin:8px 0 40px}
 .watch-lbl{font-family:"Cormorant Garamond",serif;font-size:26px;color:var(--navy);margin:0 0 14px}
 .watch video{display:block;width:100%;max-width:340px;height:auto;aspect-ratio:9/16;margin:0 auto;border-radius:18px;background:var(--navy);box-shadow:0 18px 50px rgba(10,20,34,.18)}
+.player{position:relative;width:100%;max-width:340px;margin:0 auto}
+.player video{cursor:pointer}
+.play{position:absolute;left:50%;top:78%;width:88px;height:88px;margin:-44px 0 0 -44px;border:0;border-radius:50%;background:rgba(242,180,140,.95);box-shadow:0 10px 30px rgba(0,0,0,.35);cursor:pointer;transition:transform .15s ease}
+.play:hover{transform:scale(1.06)}
+.play:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.play span{display:block;width:0;height:0;margin-left:34px;border-left:28px solid var(--navy);border-top:17px solid transparent;border-bottom:17px solid transparent}
+.player.on .play{display:none}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0}
 .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px}
 .card h3{margin:0 0 6px;font-size:22px}
