@@ -9,7 +9,7 @@ permalink: /terms/
 
 # Terms of Service
 
-*Last updated: October 28, 2026*
+*Last updated: October 29, 2026*
 
 These terms cover the GeoRoll AI search optimization service. By subscribing, you agree to them.
 
@@ -52,8 +52,7 @@ AI tools and search engines decide on their own what to show, and no one control
 ## Billing
 
 - Payments are processed by **Lemon Squeezy**, our reseller and merchant of record, which also handles taxes and invoices.
-- Your subscription renews **monthly** until you cancel. Any setup fee is charged once, with your first payment.
-- Discount codes apply as shown at checkout. For example, a first-month discount applies to the first payment only.
+- Your subscription renews **monthly** until you cancel. A one-time setup fee is charged with your first payment.
 
 </section>
 
@@ -71,7 +70,8 @@ AI tools and search engines decide on their own what to show, and no one control
 
 ## Refunds
 
-- **Try GeoRoll risk-free.** If you're not happy, ask for a full refund within 24 hours of your first payment, no questions asked.
+- **Not happy?** Ask within 24 hours of your first payment, and we'll refund your first month's subscription, no questions asked.
+- **The one-time setup fee isn't refundable,** because we start setting up your profile right away.
 - After that, payments aren't refundable, but you can cancel anytime and you won't be charged again.
 
 </section>
