@@ -19,6 +19,8 @@ a{color:#9A4F22}a:hover{color:#6E3410}
 .top .wrap{display:flex;align-items:center;justify-content:space-between}
 .brand{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600;color:var(--ivory);text-decoration:none;letter-spacing:.02em}
 .brand:hover{color:var(--peach-soft)}
+.brand{display:inline-flex;align-items:center;gap:10px}
+.brand img{width:34px;height:34px;display:block}
 .top nav a{color:var(--blue);text-decoration:none;font-size:15px}
 .wrap{max-width:860px;margin:0 auto;padding:0 16px}
 main{padding:48px 0 72px}
@@ -93,7 +95,7 @@ body.terms main .wrap{counter-reset:sec}
 </head>
 <body{% if page.url == "/" %} class="home stars"{% elsif page.url == "/terms/" %} class="terms stars"{% endif %}>
 <header class="top"><div class="wrap">
-<a class="brand" href="{{ '/' | relative_url }}">GeoRoll</a>
+<a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/georoll-icon.png' | relative_url }}" alt="" width="34" height="34">GeoRoll</a>
 <nav><a href="{{ '/' | relative_url }}#how-it-works">How it works</a><a href="{{ '/' | relative_url }}#companies">Companies</a>{% if site.checkout_url %}<a class="cta" href="{{ site.checkout_url }}">Get started</a>{% endif %}</nav>
 </div></header>
 <main><div class="wrap">
