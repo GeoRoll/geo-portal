@@ -51,14 +51,6 @@ schema: |
           },
           {
             "@type": "Question",
-            "name": "What problem does GeoRoll solve?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "GeoRoll helps with being overlooked or misdescribed by AI search tools like ChatGPT and Google's AI. GeoRoll structures a business's information so AI search tools can accurately read what it does, who it serves, and why it's worth recommending."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "Who is GeoRoll for?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -118,10 +110,6 @@ GeoRoll structures a business's information so AI search tools can accurately re
 ### What is GeoRoll?
 
 GeoRoll is an AI search optimization service.
-
-### What problem does GeoRoll solve?
-
-GeoRoll helps with being overlooked or misdescribed by AI search tools like ChatGPT and Google's AI. GeoRoll structures a business's information so AI search tools can accurately read what it does, who it serves, and why it's worth recommending.
 
 ### Who is GeoRoll for?
 
