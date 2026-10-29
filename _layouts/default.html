@@ -75,7 +75,7 @@ body.home h2{color:var(--ivory);border-top-color:rgba(255,255,255,.14)}
 body.home .watch-lbl{color:var(--ivory)}
 body.home .watch video{box-shadow:0 18px 50px rgba(0,0,0,.5)}
 body.home .empty{color:#D5DEE9}
-body.stars footer{color:#AFC0D3;border-top-color:rgba(255,255,255,.14)}
+body.stars footer{background:var(--navy);color:#AFC0D3;border-top:1px solid rgba(255,255,255,.12)}
 body.stars footer a{color:var(--peach)}
 .terms-head,.page-head{background:var(--navy);color:var(--ivory);border-radius:20px;padding:36px 32px;margin-bottom:22px;box-shadow:0 0 0 1px rgba(191,224,247,.18),0 20px 60px rgba(0,0,0,.45)}
 .terms-head h1,.page-head h1{color:var(--ivory);margin:0 0 8px}
@@ -92,15 +92,17 @@ body.terms main .wrap{counter-reset:sec}
 .panel li{margin-bottom:8px}
 .panel li::marker{color:var(--peach)}
 body.client .panel h2::before,body.home .panel h2::before{display:none}
-.panel h3{font-size:21px;margin:18px 0 4px}
+.panel h3{font:700 18px/1.35 Inter,system-ui,sans-serif;color:var(--navy);margin:20px 0 4px}
+.panel,.page-head{overflow-wrap:anywhere}
+.panel a,.page-head a{word-break:break-word}
 .panel h3:first-of-type{margin-top:4px}
-.page-note{color:#AFC0D3;font-size:14px;text-align:center;margin:8px 0 0}
+.page-note{color:#D5DEE9;text-shadow:0 1px 3px rgba(0,0,0,.9);font-size:14px;text-align:center;margin:8px 0 0}
 .page-note em{font-style:normal}
 .panel.companies h2{color:var(--navy);border-bottom:1px solid var(--line)}
 body.home .panel.companies{margin-top:44px}
 body.home .panel .empty{color:var(--muted);margin:0}
 body.home .panel.companies .cards a{border-color:var(--line);box-shadow:none}
-@media (max-width:600px){.panel{padding:20px 18px 14px}.panel h2{font-size:24px}.terms-head{padding:28px 20px}}
+@media (max-width:600px){main{padding:32px 0 40px}.panel{padding:20px 18px 14px}.panel h2{font-size:24px}.terms-head{padding:28px 20px}}
 @media (max-width:600px){h1{font-size:36px}.hero{padding:32px 20px}.hero.landing h1{font-size:32px}.grid{grid-template-columns:1fr}.top nav a:not(.cta){display:none}}
 </style>
 </head>
