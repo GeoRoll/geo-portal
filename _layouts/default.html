@@ -110,7 +110,11 @@ body.home .panel.companies .cards a{border-color:var(--line);box-shadow:none}
 <nav><a href="{{ '/' | relative_url }}#how-it-works">How it works</a><a href="{{ '/' | relative_url }}#companies">Companies</a>{% if site.checkout_url %}<a class="cta" href="{{ site.checkout_url }}">Get started</a>{% endif %}</nav>
 </div></header>
 <main><div class="wrap">
-{{ content }}
+{% if page.client %}{% assign parts = content | split: '<h2' %}<div class="page-head">{{ parts[0] }}</div>
+{% for part in parts offset:1 %}{% if forloop.last and part contains '<hr' %}{% assign bits = part | split: '<hr' %}<section class="panel"><h2{{ bits[0] }}</section>
+<div class="page-note">{{ bits[1] | remove_first: ' />' | remove_first: '>' }}</div>
+{% else %}<section class="panel"><h2{{ part }}</section>
+{% endif %}{% endfor %}{% else %}{{ content }}{% endif %}
 </div></main>
 <footer><div class="wrap">© {{ site.time | date: "%Y" }} GeoRoll · Company profiles written to be clear for people and AI search. · <a href="{{ '/terms/' | relative_url }}">Terms</a></div></footer>
 </body>
