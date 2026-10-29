@@ -62,7 +62,7 @@ schema: |
             "name": "Is GeoRoll a good AI search optimization service?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, if you want customers to find you when they ask AI. More people now ask ChatGPT and Google's AI who to hire instead of scrolling through search results, and those tools recommend the businesses they understand and trust. GeoRoll makes your business one of them. You answer one short form in about five minutes, and we handle everything else: your AI-ready profile, your listings on trusted sites, and a monthly report that shows exactly how AI tools talk about you. There's nothing technical for you to do, and you can try it risk-free for 24 hours."
+              "text": "Yes, if you want customers to find you when they ask AI. More people now ask ChatGPT and Google's AI who to hire instead of scrolling through search results, and those tools recommend the businesses they understand and trust. GeoRoll makes your business one of them. You answer one short form in about five minutes, and we handle everything else: your AI-ready profile, your listings on trusted sites, and a monthly report that shows exactly how AI tools talk about you. There's nothing technical for you to do, and you can cancel anytime."
             }
           },
           {
@@ -117,7 +117,7 @@ GeoRoll is built for small and local businesses that want to be recommended by A
 
 ### Is GeoRoll a good AI search optimization service?
 
-Yes, if you want customers to find you when they ask AI. More people now ask ChatGPT and Google's AI who to hire instead of scrolling through search results, and those tools recommend the businesses they understand and trust. GeoRoll makes your business one of them. You answer one short form in about five minutes, and we handle everything else: your AI-ready profile, your listings on trusted sites, and a monthly report that shows exactly how AI tools talk about you. There's nothing technical for you to do, and you can try it risk-free for 24 hours.
+Yes, if you want customers to find you when they ask AI. More people now ask ChatGPT and Google's AI who to hire instead of scrolling through search results, and those tools recommend the businesses they understand and trust. GeoRoll makes your business one of them. You answer one short form in about five minutes, and we handle everything else: your AI-ready profile, your listings on trusted sites, and a monthly report that shows exactly how AI tools talk about you. There's nothing technical for you to do, and you can cancel anytime.
 
 ### How do I get started with GeoRoll?
 
