@@ -13,7 +13,18 @@ description: "Get your business recommended by ChatGPT, Google's AI, and other A
 
 <section class="watch" aria-label="Video">
 <p class="watch-lbl">See how it works in 38 seconds.</p>
-<video src="{{ '/assets/georoll-video.mp4' | relative_url }}" poster="{{ '/assets/georoll-video-poster.jpg' | relative_url }}" controls playsinline preload="none" width="360" height="640"></video>
+<div class="player">
+<video src="{{ '/assets/georoll-video.mp4' | relative_url }}" poster="{{ '/assets/georoll-video-poster.jpg' | relative_url }}" playsinline preload="none" width="360" height="640"></video>
+<button class="play" type="button" aria-label="Play video"><span></span></button>
+</div>
+<script>
+document.querySelectorAll('.player').forEach(function(w){
+  var v=w.querySelector('video'), b=w.querySelector('.play');
+  function go(){ v.controls=true; w.classList.add('on'); v.play(); }
+  b.addEventListener('click', go);
+  v.addEventListener('click', function(){ if(!w.classList.contains('on')) go(); });
+});
+</script>
 </section>
 
 <h2 id="what-you-get">What you get</h2>
