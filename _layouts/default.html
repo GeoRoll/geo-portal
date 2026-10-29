@@ -66,10 +66,19 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 .cta-band{background:var(--navy);color:var(--ivory);border-radius:20px;padding:36px 28px;text-align:center;margin-top:44px}
 .cta-band h2{color:var(--ivory);border:0;margin:0 0 8px;padding:0}
 .cta-band p{color:#D5DEE9;margin:0}
+body.home{background:var(--navy)}
+body.home::before{content:"";position:fixed;inset:0;z-index:-1;background:url("{{ '/assets/georoll-page-bg.jpg' | relative_url }}") center/cover no-repeat}
+body.home .hero,body.home .cta-band{box-shadow:0 0 0 1px rgba(191,224,247,.18),0 20px 60px rgba(0,0,0,.45)}
+body.home h2{color:var(--ivory);border-top-color:rgba(255,255,255,.14)}
+body.home .watch-lbl{color:var(--ivory)}
+body.home .watch video{box-shadow:0 18px 50px rgba(0,0,0,.5)}
+body.home .empty{color:#D5DEE9}
+body.home footer{color:#AFC0D3;border-top-color:rgba(255,255,255,.14)}
+body.home footer a{color:var(--peach)}
 @media (max-width:600px){h1{font-size:36px}.hero{padding:32px 20px}.hero.landing h1{font-size:32px}.grid{grid-template-columns:1fr}.top nav a:not(.cta){display:none}}
 </style>
 </head>
-<body>
+<body{% if page.url == "/" %} class="home"{% endif %}>
 <header class="top"><div class="wrap">
 <a class="brand" href="{{ '/' | relative_url }}">GeoRoll</a>
 <nav><a href="{{ '/' | relative_url }}#how-it-works">How it works</a><a href="{{ '/' | relative_url }}#companies">Companies</a>{% if site.checkout_url %}<a class="cta" href="{{ site.checkout_url }}">Get started</a>{% endif %}</nav>
