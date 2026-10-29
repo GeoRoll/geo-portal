@@ -49,6 +49,7 @@ document.querySelectorAll('.player').forEach(function(w){
 <div class="btn-row"><a class="btn" href="{{ site.checkout_url }}">Get started &rarr;</a></div>
 </section>{% endif %}
 
+<section class="panel companies">
 <h2 id="companies">Companies on GeoRoll</h2>
 {% assign clients = site.pages | where: "client", true | sort: "title" %}
 {% if clients.size > 0 %}
@@ -58,3 +59,4 @@ document.querySelectorAll('.player').forEach(function(w){
 {% else %}
 <p class="empty">Company profiles will appear here as they are published.</p>
 {% endif %}
+</section>
