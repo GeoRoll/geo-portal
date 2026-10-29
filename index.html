@@ -15,14 +15,14 @@ description: "Get your business recommended by ChatGPT, Google's AI, and other A
 <p class="watch-lbl">See how it works in 38 seconds.</p>
 <div class="player">
 <video src="{{ '/assets/georoll-video.mp4' | relative_url }}" poster="{{ '/assets/georoll-video-poster.jpg' | relative_url }}" playsinline preload="none" width="360" height="640"></video>
-<button class="play" type="button" aria-label="Play video"><span></span></button>
 </div>
 <script>
 document.querySelectorAll('.player').forEach(function(w){
-  var v=w.querySelector('video'), b=w.querySelector('.play');
-  function go(){ v.controls=true; w.classList.add('on'); v.play(); }
-  b.addEventListener('click', go);
-  v.addEventListener('click', function(){ if(!w.classList.contains('on')) go(); });
+  var v=w.querySelector('video');
+  v.setAttribute('aria-label','Play video'); v.tabIndex=0;
+  function go(){ if(w.classList.contains('on')) return; v.controls=true; w.classList.add('on'); v.play(); }
+  v.addEventListener('click', go);
+  v.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
 });
 </script>
 </section>
