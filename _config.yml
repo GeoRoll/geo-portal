@@ -11,7 +11,7 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-checkout_url: "https://georoll.lemonsqueezy.com/checkout/buy/3d1cb329-b98d-4977-9238-4ab86fe7f325"
+checkout_url: "https://buy.stripe.com/eVq28s28I3yocAx19CgIo00"
 exclude:
   - README.md
   - client-template.md
