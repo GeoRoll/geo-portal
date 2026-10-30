@@ -12,6 +12,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 checkout_url: "https://buy.stripe.com/eVq28s28I3yocAx19CgIo00"
+billing_portal_url: "https://billing.stripe.com/p/login/eVq28s28I3yocAx19CgIo00"
 exclude:
   - README.md
   - client-template.md
