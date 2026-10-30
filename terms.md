@@ -9,7 +9,7 @@ permalink: /terms/
 
 # Terms of Service
 
-*Last updated: October 29, 2026*
+*Last updated: October 30, 2026*
 
 These terms cover the GeoRoll AI search optimization service. By subscribing, you agree to them.
 
@@ -51,7 +51,7 @@ AI tools and search engines decide on their own what to show, and no one control
 
 ## Billing
 
-- Payments are processed by **Lemon Squeezy**, our reseller and merchant of record, which also handles taxes and invoices.
+- Payments are processed securely by **Stripe**. GeoRoll never sees or stores your full card number. You get an email receipt for each payment.
 - Your subscription renews **monthly** until you cancel. A one-time setup fee is charged with your first payment.
 
 </section>
@@ -60,7 +60,7 @@ AI tools and search engines decide on their own what to show, and no one control
 
 ## Cancelling
 
-- Cancel anytime using the **Manage subscription** link in your receipt email, or by emailing us.
+- Cancel anytime by emailing us{% if site.billing_portal_url %}, or on your [billing page]({{ site.billing_portal_url }}), where you can also update your card and see past receipts{% endif %}.
 - Cancelling stops future charges. Your service continues until the end of the month you've already paid for.
 - After you cancel, we'll remove your profile page within 7 days if you ask us to.
 
