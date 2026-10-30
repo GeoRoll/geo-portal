@@ -9,9 +9,9 @@ schema: |
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://georoll.github.io/geo-portal/#organization",
+        "@id": "https://georollai.com/#organization",
         "name": "GeoRoll",
-        "url": "https://georoll.github.io/geo-portal/",
+        "url": "https://georollai.com/",
         "description": "GeoRoll is an AI search optimization service for small and local businesses that want to be recommended by AI search. GeoRoll structures a business's information so AI search tools can accurately read what it does, who it serves, and why it's worth recommending.",
         "knowsAbout": [
           "AI search optimization",
@@ -26,12 +26,12 @@ schema: |
       },
       {
         "@type": "Service",
-        "@id": "https://georoll.github.io/geo-portal/#service",
+        "@id": "https://georollai.com/#service",
         "name": "GeoRoll AI search optimization service",
         "serviceType": "AI search optimization service",
         "description": "GeoRoll structures a business's information so AI search tools can accurately read what it does, who it serves, and why it's worth recommending.",
         "provider": {
-          "@id": "https://georoll.github.io/geo-portal/#organization"
+          "@id": "https://georollai.com/#organization"
         },
         "audience": {
           "@type": "Audience",
@@ -70,7 +70,7 @@ schema: |
             "name": "How do I get started with GeoRoll?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Visit https://georoll.github.io/geo-portal/ to get started."
+              "text": "Visit https://georollai.com/ to get started."
             }
           }
         ]
@@ -83,7 +83,7 @@ schema: |
 
 **GeoRoll** is an AI search optimization service for small and local businesses that want to be recommended by AI search.
 
-**Website:** [https://georoll.github.io/geo-portal/](https://georoll.github.io/geo-portal/)
+**Website:** [https://georollai.com/](https://georollai.com/)
 
 ## At a glance
 
@@ -121,7 +121,7 @@ Yes, if you want customers to find you when they ask AI. More people now ask Cha
 
 ### How do I get started with GeoRoll?
 
-Visit [https://georoll.github.io/geo-portal/](https://georoll.github.io/geo-portal/) to get started.
+Visit [https://georollai.com/](https://georollai.com/) to get started.
 
 ## Find them online
 
