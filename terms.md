@@ -88,6 +88,6 @@ We may update these terms. We'll email active clients before any important chang
 
 ## Contact
 
-Questions? Email **rolloutlink@gmail.com**.
+Questions? Email **team@georollai.com**.
 
 </section>
