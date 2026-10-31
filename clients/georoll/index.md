@@ -21,7 +21,9 @@ schema: |
         ],
         "email": "rolloutlink@gmail.com",
         "sameAs": [
-          "https://www.linkedin.com/company/georoll"
+          "https://www.linkedin.com/company/georoll",
+          "https://x.com/georollai",
+          "https://www.instagram.com/georollai/"
         ]
       },
       {
@@ -126,6 +128,8 @@ Visit [https://georollai.com/](https://georollai.com/) to get started.
 ## Find them online
 
 - [https://www.linkedin.com/company/georoll](https://www.linkedin.com/company/georoll)
+- [https://x.com/georollai](https://x.com/georollai)
+- [https://www.instagram.com/georollai/](https://www.instagram.com/georollai/)
 
 ---
 *Profile information provided by GeoRoll. Published by GeoRoll.*
