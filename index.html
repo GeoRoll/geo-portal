@@ -2,6 +2,56 @@
 layout: default
 title: GeoRoll
 description: "Get your business recommended by ChatGPT, Google's AI, and other AI search tools. One short form, and GeoRoll handles the rest."
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://georollai.com/#org",
+        "name": "GeoRoll",
+        "url": "https://georollai.com/",
+        "logo": "https://georollai.com/assets/georoll-icon.png",
+        "email": "team@georollai.com",
+        "description": "GeoRoll is an AI search optimization (generative engine optimization) service that helps small and local businesses get recommended by ChatGPT, Google's AI, and Perplexity.",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Rollout LLC"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/georoll",
+          "https://x.com/georollai",
+          "https://www.instagram.com/georollai/",
+          "https://www.tiktok.com/@georollai",
+          "https://georollai.com/clients/georoll/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://georollai.com/#website",
+        "url": "https://georollai.com/",
+        "name": "GeoRoll",
+        "publisher": {
+          "@id": "https://georollai.com/#org"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://georollai.com/#service",
+        "name": "AI search optimization for small businesses",
+        "serviceType": "Generative engine optimization (GEO)",
+        "provider": {
+          "@id": "https://georollai.com/#org"
+        },
+        "areaServed": "US",
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Small and local businesses, including law firms, dental practices, med spas, and financial advisors"
+        },
+        "description": "A done-for-you monthly service: an AI-ready business profile with structured data, listing setup on trusted sites, and a monthly report showing how AI tools mention the business."
+      }
+    ]
+  }
 ---
 <section class="hero landing">
 <img class="hero-logo" src="{{ '/assets/georoll-wordmark.png' | relative_url }}" alt="GeoRoll, Generative Engine Optimization" width="1200" height="344">
